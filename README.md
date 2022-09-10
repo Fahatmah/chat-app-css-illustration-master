@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Chat App]()
-- Live Site URL: [Chat App]()
+- Solution URL: [Chat App](https://github.com/Fahatmah/chat-app-css-illustration-master.git)
+- Live Site URL: [Chat App](https://chat-app-fem.netlify.app/)
 
 ## My process
 
