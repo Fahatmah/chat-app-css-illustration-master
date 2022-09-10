@@ -1,0 +1,41 @@
+@use '../abstracts' as *;
+
+.chat__type__messages__container {
+  padding-inline: 0.6rem;
+  padding-block: 0 0.6rem;
+
+  .send__message__container {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    // outline: var(--outline);
+
+    input[type="text"] {
+      border: 0;
+      outline: 0;
+      width: 100%;
+      padding-block: 0.7rem;
+      padding-inline: 1rem;
+
+      &::placeholder {
+        font-size: var(--fs-100);
+        color: var(--text-primary-clr-light-100);
+      }
+    }
+
+    label {
+      position: absolute;
+      top: 0.2rem;
+      right: 0.2rem;
+      @include center;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+
+      img {
+        width: 0.530rem;
+        filter: invert(1);
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@use '../abstracts' as *;
+
+.phone__containter {
+  position: relative;
+  z-index: 10;
+  @include center;
+  flex-direction: column;
+  padding: 0.65rem;
+  width: 15rem;
+  border-radius: calc(var(--fs-100) + 1rem);
+  box-shadow: 0 6px 50px rgba(0, 0, 0, 0.1);
+  // outline: var(--outline);
+
+  button {
+    outline: 0;
+    border: 0;
+    @include center;
+    width: max-content;
+    // height: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+
+    img {
+      filter: invert(1);
+    }
+  }
+
+  .back__btn {
+    width: 0.5rem;
+  }
+
+  .info__btn {
+    width: 0.18rem;
+  }
+
+  .chat__body {
+    width: 100%;
+    border-radius: calc(var(--fs-100) + 0.4rem);
+  }
+}
+
+@media only screen and(min-width: 800px) {
+  .phone__containter {
+    margin-left: 2.5rem;
+  }
+}

@@ -1,0 +1,138 @@
+:root {
+  --text-primary-clr-dark-100: hsl(276, 100%, 81%);
+  // sub-heading at the top of the app UI
+  --text-primary-clr-dark-200: hsl(276, 55%, 52%); // chat on the left
+  --text-primary-clr-dark-300: hsl(271, 15%, 43%); // chat on the right
+  --text-primary-clr-dark-400: hsl(271, 36%, 24%); // main heading
+
+  --text-primary-clr-light-100: hsl(206, 6%, 79%); // placeholder text
+  --text-primary-clr-light-200: hsl(270, 7%, 64%); // paragraph
+
+  --secondary-clr-100: hsl(0, 0%, 100%);
+  --secondary-clr-200: hsl(270, 20%, 96%); // app bg clr
+  --secondary-clr-300: hsl(289, 100%, 72%); // radio btn outline clr
+  --secondary-clr-400: hsl(271, 36%, 24%); // submit btn bg clr
+
+  --gradient-clr-light-magenta: #e942ff;
+  --gradient-clr-light-violet: #8838ff;
+
+  // --gradient-clr-l-to-r: linear-gradient(to right, var(--gradient-clr-light-magenta), var(--gradient-clr-light-violet));
+
+  --ff-rubik: 'Rubik', sans-serif;
+
+  --fs-100: 0.48rem;
+  --fs-200: 1rem;
+  --fs-300: 2.5rem;
+
+  --fw-reg: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --ff-body: var(--ff-rubik);
+  --fs-body: var(--fs-200);
+
+  --bg-clr-chat-left: hsl(272, 41%, 93%);
+  --bg-clr-chat-right: var(--secondary-clr-100);
+
+  --transition: 0.3s ease-in-out;
+
+  --outline: 1px solid var(--gradient-clr-light-magenta);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding-block: 3.5rem;
+}
+
+@media only screen and(min-width: 800px) {
+  main {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-inline-start: 2rem;
+    width: 70rem;
+    width: min(100% - 4rem, 60rem);
+    margin-inline: auto;
+  }
+}
+
+// utilities
+
+.txt__prime__clr-dark-100 {
+  color: var(--text-primary-clr-dark-100);
+}
+
+.txt__prime__clr-dark-200 {
+  color: var(--text-primary-clr-dark-200);
+}
+
+.txt__prime__clr-dark-300 {
+  color: var(--text-primary-clr-dark-300);
+}
+
+.txt__prime__clr-dark-400 {
+  color: var(--text-primary-clr-dark-400);
+}
+
+.txt__prime__clr-light-100 {
+  color: var(--text-primary-clr-light-100);
+}
+
+.txt__prime__clr-light-200 {
+  color: var(--text-primary-clr-light-200);
+}
+
+.secondary__clr-100 {
+  color: var(--secondary-clr-100);
+}
+
+.secondary__clr-200 {
+  background-color: var(--secondary-clr-200);
+}
+
+.secondary__clr-300 {
+  background-color: var(--secondary-clr-300);
+}
+
+.secondary__clr-400 {
+  background-color: var(--secondary-clr-400);
+}
+
+.secondary__txt-clr-400 {
+  color: var(--secondary-clr-400);
+}
+
+.secondary__bg-clr-100 {
+  background-color: var(--secondary-clr-100);
+}
+
+// .fs-smaller {
+//   font-size: calc(var(--fs-100) - 0.2rem);
+// }
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fw-reg {
+  font-weight: var(--fw-reg);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}

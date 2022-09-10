@@ -1,0 +1,64 @@
+@use '../abstracts' as *;
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  @include center;
+  position: relative;
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  overflow-x: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 20rem;
+    background: linear-gradient(
+      to top,
+      var(--gradient-clr-light-violet) 0%,
+      var(--gradient-clr-light-magenta) 200%
+    );
+    border-bottom-right-radius: 68%;
+    z-index: -1;
+  }
+
+  &::before {
+    top: -1rem;
+    left: -8.2rem;
+    height: 32rem;
+  }
+
+  &::after {
+    bottom: 0;
+    // right: -7.6rem;
+    right: 0;
+    height: 29rem;
+    transform: rotate(180deg) translateX(-7.6rem);
+    opacity: 0.05;
+  }
+}
+
+@media only screen and(min-width: 768px) {
+  body {
+    &::before,
+    &::after {
+      width: 30rem;
+      height: 38rem;
+      border-bottom-right-radius: 68%;
+      border-bottom-left-radius: 68%;
+    }
+
+    &::before {
+      top: 0;
+      left: -6.6rem;
+    }
+
+    &::after {
+      bottom: 0;
+      transform: rotate(180deg) translateX(-10.5rem);
+    }
+  }
+}

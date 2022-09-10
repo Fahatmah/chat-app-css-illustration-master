@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+article {
+  margin-top: 4rem;
+
+  .article__container {
+    text-align: center;
+
+    .project__description {
+      padding-inline: 2rem;
+      margin-top: 1.5rem;
+      line-height: 1.5;
+      // font-size: calc(var(--fs-200) + 0.1rem);
+    }
+  }
+}
+
+@media only screen and(min-width: 800px) {
+  article {
+    .article__container {
+      text-align: left;
+      width: 28.1rem;
+
+      .project__description {
+        padding-inline: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Chat App</title>
+  <link rel="stylesheet" href="dist/main.css">
+
+</head>
+
+<body class="secondary__clr-200">
+
+  <main>
+    <article>
+      <div class="article__container">
+        <h1 class="project__title txt__prime__clr-dark-400 fs-300 fw-semi-bold">Simple booking</h1>
+        <p class="project__description txt__prime__clr-light-200">
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to
+          discuss arrangements and make bookings. Once the walk has been completed you can rate
+          your walker and book again all through the chat.
+        </p>
+      </div>
+
+    </article>
+    <section>
+      <div class="phone__containter secondary__bg-clr-100">
+
+        <div class="chat__body secondary__clr-200">
+          <div class="chatmate__info-container">
+            <div class="column__one">
+              <button aria-label="click to exit chat">
+                <img src="./assets/chevron-left-solid.svg" alt="" class="back__btn">
+              </button>
+              <div class="chatmate__profile-image">
+                <img src="./assets/avatar.jpg" alt="Samuel Green">
+              </div>
+              <div class="name__and__status">
+                <h2 class="chatmate__name secondary__clr-100">samuel green</h2>
+                <p class="chatmate__status txt__prime__clr-dark-100">available to walk</p>
+              </div>
+            </div>
+            <div class="column__two">
+              <button aria-label="click for info">
+                <img src="./assets/ellipsis-vertical-solid.svg" alt="" class="info__btn">
+              </button>
+            </div>
+          </div>
+
+          <div class="messages">
+            <div class="top__messages__container">
+              <div class="receiver__message txt__prime__clr-dark-200">
+                <p class="message">
+                  That sounds great. I’d be happy to discuss more.</p>
+              </div>
+              <div class="receiver__message txt__prime__clr-dark-200">
+                <p class="message">
+                  Could you send over some pictures of your dog, please?
+                </p>
+              </div>
+            </div>
+            <div class="center__messages__container">
+              <div class="send__images">
+                <img src="./assets/dog-image-1.jpg" alt="dog image one">
+                <img src="./assets/dog-image-2.jpg" alt="dog image two">
+                <img src="./assets/dog-image-3.jpg" alt="dog image three">
+              </div>
+              <div class="sender__message txt__prime__clr-dark-300">
+                <p class="message">Here are a few pictures. She’s a happy girl!</p>
+              </div>
+              <div class="sender__message txt__prime__clr-dark-300">
+                <p class="message">Can you make it?</p>
+              </div>
+            </div>
+            <div class="bottom__messages__container">
+              <div class="receiver__message txt__prime__clr-dark-200">
+                <p class="message">
+                  She looks so happy! The time we discussed works. How long shall I take her out for?
+                </p>
+
+              </div>
+              <div class="receiver__offers">
+                <div class="offer__container">
+                  <input type="checkbox" name="walk" id="offerOne">
+                  <label for="offerOne" class="offer secondary__clr-100">
+                    <p class="offer__name">30 minute walk</p>
+                    <p class="offer__price">$29</p>
+                  </label>
+                </div>
+                <div class="offer__container">
+                  <input type="checkbox" name="walk" id="offerTwo">
+                  <label for="offerTwo" class="offer secondary__clr-100">
+                    <p class="offer__name">1 hour walk</p>
+                    <p class="offer__price">$49</p>
+                  </label>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="chat__type__messages__container">
+            <div class="send__message__container">
+              <input type="text" name="message" id="message" placeholder="Type a message..."
+                class="txt__prime__clr-light-400 fs-100">
+              <label for="message" class="secondary__clr-400" aria-label="send message"><img
+                  src="/assets/angle-right-solid.svg" alt=""></label>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="attribution"
+    style="position: absolute; bottom: 0.2rem; left: 50%; transform: translateX(-50%); text-align: center; font-size: calc(var(--fs-100) + 0.3rem);">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" style="text-decoration: none;"
+      class="secondary__txt-clr-400" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Fahatmah" style="text-decoration: none;" target="_blank"
+      class="secondary__txt-clr-400">Fahatmah</a>.
+  </footer>
+</body>
+
+</html>
